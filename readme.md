@@ -24,8 +24,7 @@ You can find it <a href="http://searle.x10host.com/6502/osi_bas.zip" target="_bl
 
 ## Article
 
-<a href="https://www.linkedin.com/pulse/arduino-pro-fpga-perfect-marriage-extreme-tasks-lets-how-nardella-mqfxf" target="_blank">English version</a>
+todo
 
-<a href="https://www.linkedin.com/pulse/arduino-pro-fpga-un-matrimonio-perfetto-per-compiti-estremi-nardella-xos3f" target="_blank">Italian version</a>
 
 *Have fun*
