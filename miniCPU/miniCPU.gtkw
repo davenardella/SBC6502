@@ -1,0 +1,58 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Feb 09 16:44:09 2024
+[*]
+[dumpfile] "D:\Tutorials\FPGA\miniCPU\signals.vcd"
+[dumpfile_mtime] "Fri Feb 09 16:40:45 2024"
+[dumpfile_size] 5756
+[savefile] "D:\Tutorials\FPGA\miniCPU\miniCPU.gtkw"
+[timestart] 0
+[size] 1920 1017
+[pos] -1 -1
+*-16.896925 305000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] miniCPU_tb.
+[sst_width] 197
+[signals_width] 165
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+miniCPU_tb.CPU.CLK
+miniCPU_tb.CPU.RST_
+@200
+-
+@c00022
+miniCPU_tb.CPU.cycle[7:0]
+@28
+(0)miniCPU_tb.CPU.cycle[7:0]
+(1)miniCPU_tb.CPU.cycle[7:0]
+(2)miniCPU_tb.CPU.cycle[7:0]
+(3)miniCPU_tb.CPU.cycle[7:0]
+(4)miniCPU_tb.CPU.cycle[7:0]
+(5)miniCPU_tb.CPU.cycle[7:0]
+(6)miniCPU_tb.CPU.cycle[7:0]
+(7)miniCPU_tb.CPU.cycle[7:0]
+@1401200
+-group_end
+@22
+miniCPU_tb.CPU.opcode[7:0]
+@200
+-
+@c00022
+miniCPU_tb.CPU.PC[7:0]
+@28
+(0)miniCPU_tb.CPU.PC[7:0]
+(1)miniCPU_tb.CPU.PC[7:0]
+(2)miniCPU_tb.CPU.PC[7:0]
+(3)miniCPU_tb.CPU.PC[7:0]
+(4)miniCPU_tb.CPU.PC[7:0]
+(5)miniCPU_tb.CPU.PC[7:0]
+(6)miniCPU_tb.CPU.PC[7:0]
+(7)miniCPU_tb.CPU.PC[7:0]
+@1401200
+-group_end
+@22
+miniCPU_tb.CPU.SP[7:0]
+miniCPU_tb.CPU.DP[7:0]
+miniCPU_tb.CPU.A[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
