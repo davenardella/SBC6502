@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="../lib/tm1638_driver.v" type="file.verilog" enable="1"/>
+        <File path="../src/SBC6502_SD.v" type="file.verilog" enable="1"/>
+        <File path="../src/acia/rtl_acia.v" type="file.verilog" enable="1"/>
+        <File path="../src/acia/sync_rs232_uart_v1.2.v" type="file.verilog" enable="1"/>
+        <File path="../src/cpu/M6502.v" type="file.verilog" enable="1"/>
+        <File path="../src/inout/poweron_reset.v" type="file.verilog" enable="1"/>
+        <File path="../src/inout/rtl_octal_3state_buffer.v" type="file.verilog" enable="1"/>
+        <File path="../src/inout/rtl_octal_ff.v" type="file.verilog" enable="1"/>
+        <File path="../src/ram/rtl_ram.v" type="file.verilog" enable="1"/>
+        <File path="../src/rom_sd/rtl_sd_rom.v" type="file.verilog" enable="1"/>
+        <File path="../src/rom_sd/sd_file_reader.v" type="file.verilog" enable="1"/>
+        <File path="../src/rom_sd/sd_reader.v" type="file.verilog" enable="1"/>
+        <File path="../src/rom_sd/sdcmd_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/sbc6502.cst" type="file.cst" enable="1"/>
+        <File path="src/sbc6502.sdc" type="file.sdc" enable="1"/>
+        <File path="../src/rom/osi_bas.hex" type="file.other" enable="1"/>
+    </FileList>
+</Project>

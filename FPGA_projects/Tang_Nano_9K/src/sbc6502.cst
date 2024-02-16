@@ -1,0 +1,25 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.8.11 Education
+//Part Number: GW1NR-LV9QN88PC6/I5
+//Device: GW1NR-9
+//Device Version: C
+//Created Time: Thu 02 08 06:45:53 2024
+
+IO_LOC "TXD" 69;
+IO_PORT "TXD" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tm1638_clk" 31;
+IO_PORT "tm1638_clk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tm1638_stb" 32;
+IO_PORT "tm1638_stb" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tm1638_dio" 49;
+IO_PORT "tm1638_dio" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "RXD" 57;
+IO_PORT "RXD" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "push_btn_B" 4;
+IO_PORT "push_btn_B" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "push_btn_A" 3;
+IO_PORT "push_btn_A" PULL_MODE=UP BANK_VCCIO=1.8;
+IO_LOC "sysclk" 52;
+IO_PORT "sysclk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;

@@ -1,0 +1,25 @@
+//Copyright (C)2014-2023 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.9 Beta-4 Education
+//Part Number: GW5A-LV25MG121NC1/I0
+//Device: GW5A-25
+//Device Version: A
+//Created Time: Tue 02 13 07:01:54 2024
+
+IO_LOC "TXD" L2;
+IO_PORT "TXD" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tm1638_clk" H7;
+IO_PORT "tm1638_clk" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "tm1638_stb" J5;
+IO_PORT "tm1638_stb" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "RXD" J4;
+IO_PORT "RXD" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "push_btn_B" H10;
+IO_PORT "push_btn_B" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "sysclk" E2;
+IO_PORT "sysclk" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "push_btn_A" H11;
+IO_PORT "push_btn_A" PULL_MODE=NONE DRIVE=OFF BANK_VCCIO=3.3;
+IO_LOC "tm1638_dio" G8;
+IO_PORT "tm1638_dio" PULL_MODE=NONE DRIVE=8 BANK_VCCIO=3.3;

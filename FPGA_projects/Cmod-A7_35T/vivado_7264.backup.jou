@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb  6 13:27:36 2024
+# Process ID: 7264
+# Current directory: D:/Projects/6502/SBC6502_Cmod-A7_35T
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6112 D:\Projects\6502\SBC6502_Cmod-A7_35T\sbc6502.xpr
+# Log file: D:/Projects/6502/SBC6502_Cmod-A7_35T/vivado.log
+# Journal file: D:/Projects/6502/SBC6502_Cmod-A7_35T\vivado.jou
+# Running On: W10-DEVELOP, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 4, Host memory: 12884 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/6502/SBC6502_Cmod-A7_35T/sbc6502.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_design

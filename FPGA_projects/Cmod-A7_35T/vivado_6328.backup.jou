@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb  6 11:09:31 2024
+# Process ID: 6328
+# Current directory: D:/Projects/6502/SB6502_Cmod-A7_35T
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10352 D:\Projects\6502\SB6502_Cmod-A7_35T\sbc6502.xpr
+# Log file: D:/Projects/6502/SB6502_Cmod-A7_35T/vivado.log
+# Journal file: D:/Projects/6502/SB6502_Cmod-A7_35T\vivado.jou
+# Running On: W10-DEVELOP, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 4, Host memory: 12884 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.xpr
+export_ip_user_files -of_objects  [get_files D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/constrs_1/imports/inports/CmodA7_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/constrs_1/imports/inports/CmodA7_Master.xdc
+add_files -fileset constrs_1 -norecurse D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/constrs_1/SBC6502.xdc
+file mkdir D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/sources_1/new
+close [ open D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/sources_1/new/top.v w ]
+add_files D:/Projects/6502/SB6502_Cmod-A7_35T/sbc6502.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+add_files -norecurse D:/Projects/6502/SBC6502_src/rom/osi_bas.hex
+set_property file_type {STATIC MEMORY FILE} [get_files  D:/Projects/6502/SBC6502_src/rom/osi_bas.hex]
+set_property file_type {Memory Initialization Files} [get_files  D:/Projects/6502/SBC6502_src/rom/osi_bas.hex]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+add_files -norecurse {D:/Projects/6502/SBC6502_src/inout/rtl_octal_3state_buffer.v D:/Projects/6502/SBC6502_src/ram/rtl_ram.v D:/Projects/6502/SBC6502_src/SBC6502.v D:/Projects/6502/SBC6502_src/cpu/M6502.v D:/Projects/6502/SBC6502_src/rom/rtl_rom.v D:/Projects/6502/SBC6502_src/inout/rtl_octal_ff.v D:/Projects/6502/SBC6502_src/acia/rtl_acia.v D:/Projects/6502/SBC6502_src/inout/rtl_octal_comparator.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+add_files -norecurse D:/Projects/6502/SBC6502_lib/tm1638_driver.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_msg_config -suppress -id {Board 49-26} -string {{WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available} } 
+set_msg_config -suppress -id {Board 49-26} -string {{WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available} } 
+set_msg_config -suppress -id {Board 49-26} 
+set_msg_config -suppress -id {Vivado 12-7122} -string {{WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.} } 
+set_msg_config -suppress -id {Vivado 12-1017} -string {{WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified} } 
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
