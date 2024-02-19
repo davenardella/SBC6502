@@ -24,7 +24,9 @@ You can find it <a href="http://searle.x10host.com/6502/osi_bas.zip" target="_bl
 
 ## Article
 
-todo
+<a href="https://www.linkedin.com/pulse/lets-create-together-80s-style-microcomputer-basic-using-nardella-qlcdf" target="_blank">English version</a>
+
+<a href="https://www.linkedin.com/pulse/creiamo-insieme-un-microcomputer-anni-80-basic-usando-davide-nardella-51osf" target="_blank">Italian version</a>
 
 
 *Have fun*
